@@ -1,0 +1,18 @@
+
+.success_message{
+    background-color: rgba(68, 155, 107, 0.686);
+    color:rgb(28, 93, 57);
+    line-height: 1.5rem;
+    padding: 1vh 2vw;
+    width: 36vw;
+    border-radius: 5px;
+}
+
+.error_message{
+    background-color: rgba(166, 53, 75, 0.552);
+    color: rgba(119, 33, 50, 0.952);
+    line-height: 1.5rem;
+    padding: 1vh 2vw;
+    width: 36vw;
+    border-radius: 5px;
+}

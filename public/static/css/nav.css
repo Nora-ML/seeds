@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    overflow-x: hidden;
+    background-color:rgb(228, 205, 167);
+    margin: 0px;
+}
+
+/****************************************    Progress Bar   **************/
+
+/** Overwriting nprogress styling **/
+#nprogress .bar {
+    background: rgb(142,128,106) !important;
+    background: linear-gradient(270deg, rgba(142,128,106,1) 0%, rgba(195,176,145,1) 39%, rgba(206,186,153,1) 51%, rgba(214,193,159,1) 64%, rgba(255,230,188,1) 100%) !important;
+    
+    height: 8vh !important;;
+}
+#nprogress .peg {
+    box-shadow: 0 0 10px transparent, 0 0 5px transparent !important;
+  }
+
+#nprogress .spinner-icon{
+    border-top-color: transparent !important;
+  border-left-color: transparent !important;
+
+}
+
+/****************************************    Header   **************/
+.header{
+    background-color:rgba(142, 128, 106, 0.634);
+    color: rgb(228, 205, 167);
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 8vh;   
+    padding: 0.5vh 1.5vw;
+}
+.header .navLogo,
+.header .navBar,
+.header .navStore{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+.navLogo{
+    background-color: transparent;
+
+    width: max-content;
+    height: 100%;
+    padding-top: 0.5vh;
+}
+.navBar{
+    background-color: transparent;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 100%;
+    min-width: 40vw;
+
+    list-style: none;   
+}
+    .navBar-list{
+        background-color: transparent;    
+    }
+    .navBar-list--anchor{
+        background-color: transparent;
+        padding: 10px 15px;
+        color: rgb(228, 205, 167);
+        text-decoration: none;
+        cursor: pointer;
+    }
+.navStore{
+    background-color: transparent;
+    padding: 0.5vh;
+}
+
+/*************************************** Register form *************/
+.register_form-container{
+    /* background-color:rgba(142, 128, 106, 0.634) ; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    max-height: 100vh;
+    height: auto;
+    min-height: 80vh;
+
+    margin-top: 5vh;
+}
+
+.register_form-container--wrap{
+    /* background-color:rgba(142, 128, 106, 0.905) ; */
+    color:  rgba(74, 66, 54, 0.881);
+}
+.register_form-field {
+    /* border: 1px rgba(196, 183, 162, 0.905) solid; */
+
+    display:flex;
+    flex-direction: column;
+
+    padding: 2vh 2vw;
+    width: 40vw;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.register_form-field input{
+    background-color:rgba(142, 128, 106, 0.219);
+    border: none;
+    color: rgba(74, 66, 54, 0.881);
+
+    outline: 0;
+    margin-top: 1vh;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.register_form-field--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.register_form-field--button h4 {
+    cursor: pointer;
+}
+
+.register_form-field--button input[type=submit]{
+    background-color: rgba(74, 66, 54, 0.881); 
+    color: rgba(228, 205, 167, 0.538);
+    font-size: 13px;
+    width: 50%;
+    text-transform: uppercase;
+}
