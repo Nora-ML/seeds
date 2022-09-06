@@ -118,7 +118,7 @@ body{
     font-size: 15px;
     letter-spacing: 2px;
 }
-.register_form-field input{
+.register_form-field input,.register_form-field textarea,.register_form-field label{
     background-color:rgba(142, 128, 106, 0.219);
     border: none;
     color: rgba(74, 66, 54, 0.881);
@@ -130,6 +130,12 @@ body{
 
     font-size: 14px;
     letter-spacing: 2px;
+}
+.register_form-field label{
+    border: solid 2px  rgba(74, 66, 54, 0.881); 
+    cursor: pointer;
+    width: 70%;
+
 }
 .register_form-field--button {
     display: flex;

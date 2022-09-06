@@ -1,0 +1,35 @@
+.admindash_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 100vw;
+    padding: 5vw 5vh;
+
+    overflow-x: 0;
+}
+.admindash_leftpanel{
+    background-color: antiquewhite;
+    width: 30%;
+}
+    .admincommands_ul{
+        list-style: none;
+        
+    }
+    .admincommands_li{
+
+    }
+.admindash_rightpanel{
+    background-color: antiquewhite;
+    width: 70%;
+
+}
+
+/*** create page **/
+.admindash_create{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

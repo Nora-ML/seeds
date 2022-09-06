@@ -22,18 +22,19 @@ const withAdmin = Page => {
         // fetching user authorization from the server
         if (token) {
             try {
-                const response = await axios.get(`${API}/admin`, {
-                    headers: {
-                        authorization: `Bearer ${token}`,
-                        contentType: 'application/json'
-                    }
-                })
-                user = response.data;
-            } catch (error) {
-                if (error.response.status === 401) {
-                    user = null;
-                }
-            }
+							const response = await axios.get(`${API}/admin`, {
+								headers: {
+									authorization: `Bearer ${token}`,
+									contentType: "application/json",
+								},
+							});
+							console.log("withAdmin user:", response.data);
+							user = response.data;
+						} catch (error) {
+							if (error.response.status === 401) {
+								user = null;
+							}
+						}
         }
         // if user not authorized we wil redirect to home page
         if (user === null) {
